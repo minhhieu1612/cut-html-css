@@ -1,1 +1,1 @@
-# cut-html-css
+All pratice about cut html/css from pug, sass, babel ES6 by me.
