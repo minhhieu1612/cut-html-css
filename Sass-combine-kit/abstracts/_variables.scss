@@ -1,0 +1,74 @@
+// ======================================================
+// Abstracts :: Variables
+// ======================================================
+
+// Paths
+$path-image: '../images';
+$path-fonts: '../fonts';
+
+// Colors
+$white: #fff;
+$black: #000;
+$color: #000;
+$bgcolor: #fff;
+
+$primary: #ffcc01;
+$secondary: #1f373d;
+$link-hover-color: lighten($primary, .7);
+
+$navbar-light-color: $black;
+$navbar-light-hover-color: $link-hover-color;
+$navbar-light-active-color: $primary;
+
+// Fonts
+$font-family-base: 'Hiragino Sans',
+'Noto Sans Japanese',
+'Yu Gothic',
+'Meiryo',
+'Hiragino Kaku Gothic Pro',
+'游ゴシック',
+'メイリオ',
+'MS ゴシック',
+'sans-serif';
+$font-family-heading: 'Playfair Display',
+serif;
+
+$font-size-base: 1rem; // Assumes the browser default, typically `16px`
+$font-size-lg: $font-size-base * 1.25;
+$font-size-sm: $font-size-base * .875;
+
+$font-weight-lighter: lighter;
+$font-weight-light: 300;
+$font-weight-normal: 400;
+$font-weight-bold: 700;
+$font-weight-bolder: bolder;
+
+$font-weight-base: $font-weight-normal;
+$line-height-base: 1.5;
+
+$h1-font-size: $font-size-base * 2.5;
+$h2-font-size: $font-size-base * 2;
+$h3-font-size: $font-size-base * 1.75;
+$h4-font-size: $font-size-base * 1.5;
+$h5-font-size: $font-size-base * 1.25;
+$h6-font-size: $font-size-base;
+
+$headings-margin-bottom: $spacer / 2;
+$headings-font-family: null;
+$headings-font-weight: 500;
+$headings-line-height: 1.2;
+$headings-color: null;
+
+// Breakpoints
+$grid-breakpoints: (xs: 0,
+  sm: 576px,
+  md: 768px,
+  lg: 992px,
+  xl: 1200px);
+
+$screen-max: (xs: 0,
+  sm: 575px,
+  md: 767px,
+  lg: 991px,
+  xl: 1199px,
+  xxl: 1439px);

@@ -1,0 +1,85 @@
+/* src/assets/styles/utils/_mixins.scss  */
+
+@mixin is-flex($align: center, $justify: center, $direction: row, $wrap: wrap) {
+  display: flex;
+  align-items: $align;
+  justify-content: $justify;
+  flex-direction: $direction;
+  flex-wrap: $wrap;
+}
+
+@mixin bg-image($url, $repeat: no-repeat, $position: center, $size: initial) {
+  background-image: url($url);
+  background-repeat: $repeat;
+  background-position: $position;
+  background-size: $size;
+}
+
+@mixin font($fFamily, $fSizes, $fWeight) {
+  font-family: $fFamily;
+  font-weight: $fWeight;
+
+  @each $breakpoint,
+  $fSize in $fSizes {
+    @include #{$breakpoint} {
+      font-size: $fSize;
+    }
+  }
+}
+
+@mixin prefix($property, $value, $prefixes) {
+  @each $prefix in $prefixes {
+    -#{$prefix}-#{$property}: $value;
+  }
+
+  #{$property}: $value;
+}
+
+// iOS devices
+@mixin iOSDevices {
+  @supports (-webkit-overflow-scrolling: touch) {
+    @content;
+  }
+}
+
+// XSmall devices
+@mixin xs {
+  @media (max-width: #{$screen-max-xs}) {
+    @content;
+  }
+}
+
+// Small devices
+@mixin sm {
+  @media (max-width: #{$screen-max-sm}) {
+    @content;
+  }
+}
+
+// Medium devices
+@mixin md {
+  @media (max-width: #{$screen-max-md}) {
+    @content;
+  }
+}
+
+// Large devices
+@mixin lg {
+  @media (max-width: #{$screen-max-lg}) {
+    @content;
+  }
+}
+
+// Extra large devices
+@mixin xl {
+  @media (max-width: #{$screen-max-xl}) {
+    @content;
+  }
+}
+
+// Retina devices
+@mixin xxl {
+  @media (min-width: #{$screen-xxl-min}) {
+    @content;
+  }
+}

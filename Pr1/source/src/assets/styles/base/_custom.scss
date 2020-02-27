@@ -7,8 +7,9 @@ $white: #fff;
 $black: #000;
 
 // Bootstrap
-$primary: #f50;
-$link-hover-color: #f70;
+$primary: #ffcc01;
+$secondary: #1f373d;
+$link-hover-color: lighten($primary, .7);
 
 $navbar-light-color: $black;
 $navbar-light-hover-color: $link-hover-color;
