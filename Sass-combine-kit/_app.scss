@@ -1,18 +1,16 @@
-/* 
-  Abstracts 
+/*
+  Abstracts
 */
 @import 'abstracts/variables';
 @import 'abstracts/functions';
 @import 'abstracts/mixins';
 
-/* 
+/*
 Libraries
 */
 $slick-font-path: '~modules/slick-carousel/slick/fonts/' !default;
 $slick-loader-path: '~modules/slick-carousel/slick/' !default;
 $slick-arrow-color: $color !default;
-@import '~modules/slick-carousel/slick/slick.scss';
-@import '~modules/slick-carousel/slick/slick-theme.scss';
 @import '~modules/bootstrap/scss/bootstrap';
 
 /*
@@ -21,7 +19,6 @@ $slick-arrow-color: $color !default;
 @import 'base/reset';
 @import 'base/fonts';
 @import 'base/animation';
-@import 'base/global';
 
 /*
   Utils
@@ -45,5 +42,5 @@ $slick-arrow-color: $color !default;
   Pages
 */
 @import './pages/index';
-@import './pages/about';
+@import './pages/home';
 @import './pages/service';

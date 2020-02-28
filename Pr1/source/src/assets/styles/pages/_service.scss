@@ -7,6 +7,7 @@
     list-style: none;
     padding: 0;
     margin: 0 15px;
+
     li {
       &::before {
         content: '\2022';
@@ -24,5 +25,4 @@
   Responsive
 */
 
-@include media-breakpoint-down(sm) {
-}
+@include media-breakpoint-down(sm) {}

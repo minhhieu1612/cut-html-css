@@ -1,46 +1,46 @@
 /*
-  Base
+  Abstracts
 */
-@import './base/fonts';
-@import './base/custom';
+@import 'abstracts/variables';
+@import 'abstracts/functions';
+@import 'abstracts/mixins';
 
 /*
-  Bootstrap
-*/
-@import '~modules/bootstrap/scss/bootstrap';
-
-/* 
-  Libraries
+Libraries
 */
 $slick-font-path: '~modules/slick-carousel/slick/fonts/' !default;
 $slick-loader-path: '~modules/slick-carousel/slick/' !default;
 $slick-arrow-color: $color !default;
-@import '~modules/slick-carousel/slick/slick.scss';
-@import '~modules/slick-carousel/slick/slick-theme.scss';
+@import '~modules/bootstrap/scss/bootstrap';
+
+/*
+  Base
+*/
+@import 'base/reset';
+@import 'base/fonts';
+@import 'base/animation';
 
 /*
   Utils
 */
-@import './utils/mixins';
+@import 'base/utilities';
 
 /*
   Components
 */
-@import './components/header';
-@import './components/footer';
-@import './components/navbar';
-@import './components/carousel';
+@import './components/component';
+@import './components/other-component';
 
 /*
   Layout
 */
-@import './layout/structure';
-@import './layout/page';
+@import './layout/layout';
+@import './layout/other-layout';
+@import './layout/header';
 
 /*
   Pages
 */
 @import './pages/index';
-@import './pages/about';
+@import './pages/home';
 @import './pages/service';
-@import './pages/contact';

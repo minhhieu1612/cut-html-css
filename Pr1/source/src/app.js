@@ -11,5 +11,4 @@ $(document).ready(() => {
   console.log('Frontend Boilerplate is ready!');
 
   require('scripts/scroll');
-  require('scripts/carousel');
 });
